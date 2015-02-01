@@ -1,0 +1,33 @@
+body {  
+    align: center;
+div
+   {
+    width:300px;                     /* 全体幅 */
+    height:24px;                     /* 全体高さ */
+    text-align:center;               /* 文字を中央 */
+    line-height:150%;                /* 行の高さ */
+   }
+
+/* リンク部分 */
+
+a
+   {
+    display:block;                   /* リンクをブロックに変換 */
+    width:100%;                      /* リンク幅をブロック全体に */
+    height:100%;                     /* リンク高さをブロック全体に */
+    text-decoration:none;            /* リンク部分の下線を消す */
+    border:solid 1px #000000;        /* 全体罫線 */
+    background-color:#ff9000;        /* 背景色 */
+   }
+
+a:link
+   {color:#000000;}                  /* まだ見ていないリンク色 */
+
+a:visited
+   {color:#000000;}                  /* 既に見たリンク色 */
+
+a:hover
+   {
+    color:#ffffff;                   /* 文字色 */
+    font-weight:bold;                /* 文字を太く */
+   }
