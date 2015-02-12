@@ -1,0 +1,220 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Noto Sans Japanese', serif;
+  background: #333;
+  font-size: 30px;
+}
+
+section {
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+section:not(.size-free) {
+    height:90vh;
+}
+
+section:not(:first-child) {
+    /* 先頭の数値から横の位置、縦の位置、ボカシ、オフセット、色 */
+    box-shadow:0px 10px 10px -5px #111 inset;
+}
+
+h1 {
+    display:block;
+    text-align:left;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:-10px;
+    font-size:50px;
+    color:Orange;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section1 {
+    background-image:url("img/section1-bg.jpg");
+    -moz-background-size:cover;
+    background-size:cover;
+    background-position:bottom;
+}
+
+#section1 p {
+    padding-left:20px;
+    font-size:30px;
+    color:White;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.arrow-up,.arrow-down {
+    position:absolute;
+    display:block;
+    bottom:0px;
+    width:100%;
+}
+
+.arrow-up:before,.arrow-down:before {
+    position:absolute;
+    content:"";
+    display:block;
+    left: 0;
+    right: 0;
+    width: 30px;
+	height: 30px;
+    margin:auto auto;
+	border-style: solid;
+	border-color: transparent white white transparent;
+	border-width: 5px;
+    background: transparent;
+}
+
+.arrow-down:before {
+    top: -60px;
+    -moz-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+}
+
+.arrow-up:before {
+    top:-30px;
+    -moz-transform: rotateZ(225deg);
+    -webkit-transform: rotateZ(225deg);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section3 {
+    text-align:center;
+}
+
+.member {
+    display:inline-block;
+    margin-top:50px;
+    width:250px;
+    height:350px;
+    background-image: url("img/member-bg.gif");
+    text-align:center;
+    color:#fff;
+}
+
+.member img {
+    margin-top:10px;
+    width:200px;
+    height:200px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.member .word{
+    font-size:15px;
+}
+
+.member a{
+    font-size:20px;
+    color:#fff;
+}
+
+.background-hack {
+    z-index                 : -1;
+    background-color        : #cccccc;
+    background-image        : url('img/section3-bg.jpg');
+    background-repeat       : no-repeat;
+    background-size         : cover;
+    background-position     : bottom;
+    position                : fixed;
+    top                     : 0;
+    left                    : 0;
+    right                   : 0;
+    bottom                  : 0;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section2 {
+    text-align:center;
+    background:#ff0;
+}
+
+.action {
+    padding:5px;
+    display:inline-block;
+    position:relative;
+    text-align:left;
+    background:white;
+    width:80%;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:5px solid #c69d18;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.action img {
+    vertical-align: middle;
+    margin-left:5px;
+    display:inline-block;
+    width:60px;
+    height:60px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border:5px solid #ddd;
+}
+.action .name {
+    display:inline-block;
+    vertical-align: middle;
+    font-size:50px;
+    
+}
+
+/* ///////////////////////////////////////////////////////////////////// IPHONE */
+@media screen and (min-width: 0px) and (max-device-width: 320px) {
+    #section1 p {
+        padding-left:20px;
+        font-size:30px;
+        color:White;
+    }
+    #section2 .action .sentence {
+        font-size:20px;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////// TAB */
+@media screen and (min-width: 321px) and (max-device-width: 920px) {
+    h1 {
+        font-size:15vh;
+        color:Orange;
+    }
+    #section1 p {
+        font-size:5vh;
+        color:White;
+    }
+    .member {
+        margin-right:25px;
+        margin-left:25px;
+    }
+
+}
+/* ///////////////////////////////////////////////////////////////////// PC */
+@media screen and (min-width: 911px)  {
+    h1 {
+        font-size:15vh;
+        color:Orange;
+    }
+    #section1 p {
+        font-size:5vh;
+        color:White;
+    }
+    .member {
+        margin-right:25px;
+        margin-left:25px;
+    }
+
+}
