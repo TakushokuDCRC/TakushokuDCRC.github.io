@@ -24,7 +24,6 @@ section:not(.size-free) {
 }
 
 section:not(:first-child) {
-    /* 先頭の数値から横の位置、縦の位置、ボカシ、オフセット、色 */
     box-shadow:0px 10px 10px -5px #111 inset;
 }
 
