@@ -14,18 +14,23 @@ a.link {
   background: #ddd;
 }
 
+a.link:hover {
+  background: #fff;
+}
+
 hr {
   width: 100%;
   margin: 20px;
 }
 
-img.logo {
-  width:256px;
-  height:256px;
+img.komo91 {
+  width:100px;
+  height:100px;
+  
 }
 
 p {
-  font-family: ÇlÇr Çoñæí©,serif;
+  font-family:serif;
 }
 
 h2 {
@@ -43,22 +48,22 @@ h3 {
 
 #menu {
   width: 100%;
-  position: fixed; 
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed; /* memuå≈íË */
+  margin-left: auto; /* margin-left=0 */
+  margin-right: auto; /* margin-right=0 */
 }
 
 #menu ul{ 
   width: 100%;
   margin: 0; 
   padding: 0;
-  list-style: none;
+  list-style: none; /* É}Å[ÉJÅ[ï\é¶Ç»Çµ */
 }
 
 #menu li{ 
   text-align:left;
   vertical-align:middle;
-  width: 25%;
+  width: 20%;
   display: inline; 
   padding: 0; 
   margin: 0; 
@@ -69,7 +74,7 @@ h3 {
 #menu li a{
   display: block; 
   position: relative;
-  border-left: 8px solid #C97556;
+  border-left: 6px solid #C97556;
   text-decoration: none;
   color: #008000;
   margin: 0px 0px;
@@ -77,7 +82,7 @@ h3 {
   padding-top:5px;
   padding-bottom:5px;
   text-align: center;
-  font-size: 21px;
+  font-size: 18px;
   font-family: Impact,fantasy;
   transition:all 1s linear 0;
 }
