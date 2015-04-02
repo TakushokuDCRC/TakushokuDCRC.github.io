@@ -9,6 +9,11 @@ memberObj.komo91 = [
 	"http://takushokudcrc.hatenablog.com/archive/category/komo91",
 	"http://takushokudcrc.github.io/komo91/"
 ];
+memberObj.dororo = [
+	"http://takushokudcrc.github.io/img/keyenix-icon.jpg",
+	"http://takushokudcrc.hatenablog.com/archive/category/dororo",
+	"http://takushokudcrc.github.io/keyenix/"
+];
 var element = document.createElement('aside');
 element.id = "testBox"; 
 element.innerHTML = "固定テスト";
