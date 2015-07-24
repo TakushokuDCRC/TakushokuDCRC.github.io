@@ -87,7 +87,9 @@ p {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
+.col-3 {
+	width: 100%;
+}
 @media (min-width: 768px){
 	.col-3 {
 		float: left;
@@ -97,7 +99,7 @@ p {
 
 /*ツイッタータイムライン設定*/
 .twitter-timeline {
-    width: 90% !important;
+    width: 100% !important;
     border-radius:0 !important;
     box-shadow:none !important;
     border:1px solid #ccc !important;
