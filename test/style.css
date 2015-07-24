@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(http://fonts.googleapis.com/css?family=Parisienne|Raleway:400,500,600,300|Noto+Serif:400,700,400italic,700italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Questrial|Changa+One|Audiowide|Righteous|Orbitron:400,900,700,500|Rubik+Mono+One);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans Japanese', serif;
+  width:100%;
+  background:#bbbbbb;
+}
+
+section {
+    position:relative;
+    overflow:hidden;
+	margin: 0 auto;
+	padding: 120px 1em 120px 1em;
+}
+
+@media (min-width: 768px){
+	.size-free {
+	  width: 750px;
+	}
+}
+@media (min-width: 992px){
+	.size-free {
+	  width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.size-free {
+	  width: 1170px;
+	}
+}
+
+h2,h1{
+	text-align: left;
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 4px solid #FFF;
+	font-family: 'Questrial', sans-serif;
+	font-size: 3em;
+	line-height: 1em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #FFF;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+#particles-js{
+	position: fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	right:0;
+	z-index:-1;
+}
+
+/*よこ並べ外包設定*/
+.row{
+	margin-left:-1em;
+	margin-right:-1em;
+}
+
+.row:before, .row:after{
+  content: " ";
+  display: table;
+}
+/*よこ並べ設定*/
+.row div {
+	/*position: relative;*/
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 768px){
+	.col-3 {
+		float: left;
+		width: 33.33333333%;
+	}
+}
+
+/*ツイッタータイムライン設定*/
+.twitter-timeline {
+    width: 100% !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+    padding:10px;
+    backgrounf:#fff
+	border:0;
+}
+@media (min-width: 768px){
+	.twitter-timeline-rendered {
+	  height: 500px;
+	}
+}
+@media (min-width: 992px){
+	.twitter-timeline-rendered {
+	  height: 430px;
+	}
+}
+@media (min-width: 1200px) {
+	.twitter-timeline-rendered {
+	  height: 360px;
+	}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#section1 {
+    /*
+    background-image:url("img/section1-bg.jpg");
+    -moz-background-size:cover;
+    background-size:cover;
+    background-position:bottom;
+    */
+}
+
+.home__main-icon {
+	width:100%
+	text-align: center;
+	
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section3 {
+    text-align:center;
+}
+
+.member {
+    display:inline-block;
+    margin-top:50px;
+    width:250px;
+    height:350px;
+    background-image: url("img/member-bg.gif");
+    text-align:center;
+    color:#fff;
+}
+
+.member img {
+    margin-top:10px;
+    width:200px;
+    height:200px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.member .word{
+    font-size:15px;
+}
+
+.member a{
+    font-size:20px;
+    color:#fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#section2 {
+    text-align:center;
+    /*background:#ff0;*/
+}
+
+.action {
+    padding:5px;
+    display:inline-block;
+    position:relative;
+    text-align:left;
+    background:white;
+    width:90%;
+    border-radius:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.action img {
+    vertical-align: middle;
+    margin-left:5px;
+    display:inline-block;
+    width:60px;
+    height:60px;
+}
+.action .name {
+    display:inline-block;
+    vertical-align: middle;
+    font-size:40px;
+
+}
+
+/*
+
+ ///////////////////////////////////////////////////////////////////// IPHONE
+@media screen and (min-width: 0px) and (max-device-width: 320px) {
+    #section1 p {
+        padding-left:20px;
+        font-size:30px;
+        color:White;
+    }
+    #section2 .action .sentence {
+        font-size:20px;
+    }
+}
+ ///////////////////////////////////////////////////////////////////// TAB
+@media screen and (min-width: 321px) and (max-device-width: 920px) {
+    h1 {
+        font-size:15vh;
+        color:Orange;
+    }
+    #section1 p {
+        font-size:5vh;
+        color:White;
+    }
+    .member {
+        margin-right:25px;
+        margin-left:25px;
+    }
+
+}
+ ///////////////////////////////////////////////////////////////////// PC
+@media screen and (min-width: 911px)  {
+    h1 {
+        font-size:15vh;
+        color:Orange;
+    }
+    #section1 p {
+        font-size:5vh;
+        color:White;
+    }
+    .member {
+        margin-right:25px;
+        margin-left:25px;
+    }
+
+}
+
+*/
