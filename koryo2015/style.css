@@ -57,11 +57,11 @@ iframe{
 		z-index:99;
 		position:fixed;
 		background:rgba(255,255,255,0.2);
-		line-height:100%;
+		line-height:auto;
 	}
 	.scroll {
 		overflow:hidden;
-		height:35px;
+		height:38px;
 		transition: height 0.5s linear 0.0s,background 0.5s linear 0.0s;
 	}
 
