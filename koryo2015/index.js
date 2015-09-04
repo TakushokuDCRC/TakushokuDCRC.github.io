@@ -38,7 +38,7 @@ function onYouTubeIframeAPIReady() {
     });
 }
 function onPlayerReady(event) {
-    //event.target.mute();
+    player.mute()
     event.target.setPlaybackQuality(small);
     player.playVideo();
 
