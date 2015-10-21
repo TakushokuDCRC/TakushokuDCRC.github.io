@@ -1,0 +1,73 @@
+﻿<html>
+<head>
+<title>MICKey's hoby page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style_a.css" type="text/css">
+<script language="JavaScript">
+<!--
+var timer1;
+var c16, c16b;
+var cnt = 0;
+var dd;
+function iro(){
+	var c = Math.round((127 * ((Math.cos(cnt) + 1) / 2)) + 104);
+	c16 = c.toString(16);
+	c16b = Math.round(c * 1.1).toString(16);
+	document.getElementById("d1").style.color = "#"+c16+c16+c16b;
+	cnt += 0.03;
+	if(cnt > Math.PI * 2){
+		cnt = 0;
+	}
+
+	dd = new Date();
+	var time = dd.toLocaleString();
+	document.getElementById('d2').innerHTML = time;
+
+	timer1 = setTimeout("iro()",10);
+}
+-->
+</script>
+</head>
+<body onload="iro()" alink="#999999" vlink="#999999" background="tile.png">
+<table width="100%"><tr><td align="center">
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr height="50">
+		<td colspan="5" align="left">
+		<font style="font-family: Impact,Charcoal; color: rgb(204, 204, 238);" size="40"><b><div id="d1">MICKey's hoby page</div></b></font>
+		</td>
+		<td align="right">
+		<font color="#dddddd" style="font-size: 15pt; font-weight: bolder;" ><div id="d2">Now Loading...</div></font>
+		</td>
+	</tr>
+	<tr height="50">
+		<td class="A" width="260" valign="bottom">
+		<a href="index.html" target="main"><img src="img/index.png" class="D" width="265" height="50" onmouseover="this.src='img/index2.png'" onmouseout="this.src='img/index.png'"></a>
+		</td>
+		<td class="A" width="260" valign="bottom">
+		<a href="about.html" target="main"><img src="img/about.png" class="D" width="260" height="50" onmouseover="this.src='img/about2.png'" onmouseout="this.src='img/about.png'"></a>
+		</td>
+		<td class="A" width="260" valign="bottom" colspan="3">
+		<a href="gallery.html" target="main"><img src="img/gallery.png" class="D" width="260" height="50" onmouseover="this.src='img/gallery2.png'" onmouseout="this.src='img/gallery.png'"></a>
+		</td>
+		<td class="A" width="260" valign="bottom">
+		<a href="link.html" target="main"><img src="img/link.png" class="D" width="260" height="50" onmouseover="this.src='img/link2.png'" onmouseout="this.src='img/link.png'"></a>
+		</td>
+	</tr>
+	<tr height="650">
+		<td colspan="3" align="center">
+		<iframe src="index.html" name="main" width="650" height="650">
+		この部分はインラインフレームを使用しています。
+		</iframe>
+		</td>
+		<td class="C" width="2">
+		</td>
+		<td class="B" width="148" colspan="2">
+		<!--<font color="#999999"><a href="https://twitter.com/Magihezwo" target="_blank" style="text-decoration: none;"><b>@Magihezwo</b></a></font><br>-->
+		<a class="twitter-timeline"  href="https://twitter.com/Magihezwo" data-widget-id="656430436202205184">@Magihezwoさんのツイート</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</td>
+	</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
