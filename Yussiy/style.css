@@ -1,0 +1,228 @@
+head {
+   
+}
+body {
+    width:100%;
+    color: #333333;
+    background-image: url(Picture/background_1.png);
+}
+
+.wrapper{
+    position:relative;
+    width:1024px;
+    margin: 0 auto;
+}
+
+#siteTitle{
+	font-size:30px;
+	line-height:1.2;
+}
+
+.pageTitle{ 
+	font-size: 26px;
+	background-color: #F2F2E5;
+ }
+.Create {
+    margin-top:10px;
+	font-size: 26px;
+	background-color: #F2F2E5;
+    
+}
+
+/* ▼ twitter */
+.culms{
+    float: left;
+    margin-bottom: 50px;
+}
+.twitter{
+    margin-left: 20px;
+    width:300px;
+}
+
+
+/* ▼ タブメニュー全体の設定 */
+div.tabbox {
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0px;
+    width:650px;
+    height:300px;
+}
+
+/* ▼ タブ部分のマージンとパディング領域を設定 */
+p.tabs { margin: 0px; padding: 0px; }
+p.tabs a {
+   /* ▼ リンクをタブのように見せる */
+   display: block; width: 189.6px; float: left;
+   margin: 0px 3px 0px 0px; padding: 3px;
+   text-align: center;
+   font-size:12px;
+}
+/* ▼ タブごとの配色設定 */
+p.tabs a.tab1 {text-decoration:none; background-color:#fafafa;border-  right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(170, 0, 0, 0.85);  color: #666; font-weight:600;}
+p.tabs a.tab2 {text-decoration:none; background-color:#fafafa;border-  right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(0, 170, 0, 0.85);  color: #666; font-weight:600;}
+p.tabs a.tab3 {text-decoration:none; background-color:#fafafa;border-right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(0, 0, 170, 0.85);  color: #666; font-weight:600;}
+p.tabs a:hover {opacity:0.7;filter:alpha(opacity=70);}
+
+/* ▼ タブ中身のボックス */
+div.tab {
+   /* ▼ ボックス共通の装飾 */
+    box-sizing:border-box;
+   height: 270px;  clear: left;
+    padding:20px;
+}
+/* ▼ 各ボックスの配色設定 */
+div#tab1 { border: 2px solid #DDD; background-color: #fbfbfb; }
+div#tab2 { border: 2px solid #DDD; background-color: #fbfbfb; }
+div#tab3 { border: 2px solid #DDD; background-color: #fbfbfb; }
+div.tab p { margin: 0.5em; }
+
+div.profile {float:right;position:relative;width:300px;font-size:15px;right:20px;color:#555;top:-5px;}
+div.massege {float:right;position:relative;width:550px;font-size:20px;right:30px;color:#555;top:-5px;}
+div.main {float:right;position:relative;width:260px;font-size:15px;right:330px;color:#555;top:-5px;}
+div.sub {float:right;position:relative;width:325px;font-size:15px;right:-250px;color:#555;top:-5px;}
+
+.right-top{
+    position:absolute;
+    top:0px;
+    right:30px;
+}
+
+.right-top img{
+    float: right;
+}
+
+/*時刻表示のScript位置*/
+div.script {/*position:absolute;top:5px;*/}
+
+/*カウンターScript位置*/
+div.counter {/*position:absolute;top:25px;*/}
+
+/*ポインターの位置
+div.GameP {position:absolute;left:350px;top:525px;}
+div.MusicP {position:absolute;left:700px;top:525px;}
+div.AppP {position:absolute;left:1050px;top:525px;}
+*/
+
+/*サブタイトルバー*/
+.arrow_box {
+	position: relative;
+	background: #f0f5da;
+	border: 4px solid #bff5f5;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 5%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(240, 245, 218, 0);
+	border-top-color: #f0f5da;
+	border-width: 20px;
+	margin-left: -20px;
+    
+}
+.arrow_box:before {
+	border-color: rgba(191, 245, 245, 0);
+	border-top-color: #bff5f5;
+	border-width: 26px;
+	margin-left: -26px;
+}
+
+/*ボタン*/
+
+.pop_btn > li {
+  display: inline-block;
+  height: 110px;
+  margin: 0;
+  position: relative;
+  width: 110px;
+}
+ 
+.pop_btn > li a {
+  background-color: #0B9;
+  border: 5px solid #0B9;
+  border-radius: 500px;
+  color: #FFF;
+  display: block;
+  font-family: "Arial Black";
+  font-size: 17px;
+  height: 70px;
+  left: 15px;
+  line-height: 70px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 15px;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  width: 70px;
+}
+
+.pop_btn > li a:hover {
+  background-color: #FFF;
+  color: #0B9;
+  height: 100px;
+  left: 0;
+  line-height: 100px;
+  top: 0;
+  width: 100px;
+}
+
+/*リスト*/
+.box {
+    display: inline-block;
+  background-color: #F6F6F6;
+  border: 1px solid #CCC;
+  padding: 25px 15px;
+  position: relative;
+  width: 298px;
+}
+.box:before {
+  border: 20px solid #CCC;
+  border-bottom-color: #FFF;
+  border-right-color: #FFF;
+  bottom: 
+-1px
+;
+  content: "";
+  position: absolute;
+  right: 
+-1px
+;
+}
+.box > h1,
+.box > h2,
+.box > h3,
+.box > p {
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.box > h1 {
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.box > ul {
+  margin: 10px 0;
+}
+.box > li {
+  margin: 5px 0;
+}
+.box > p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
