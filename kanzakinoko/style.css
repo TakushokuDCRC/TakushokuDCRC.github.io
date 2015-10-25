@@ -1,0 +1,31 @@
+li
+{
+	list-style: none;
+}
+
+#background{
+	opacity: 0.6;
+}
+
+.header h1
+{
+	font-size: 50px;
+}
+
+.columns
+{
+	font-size: 30px;
+}
+
+.contents-left
+{
+	float: left;
+}
+
+.contents-right
+{
+	float: left;
+	position: relative;
+	left: 300px;
+	width: 500px;
+}
