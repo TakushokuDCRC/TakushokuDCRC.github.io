@@ -1,11 +1,19 @@
-function ChangeTab(tabname) {
+﻿function ChangeTab(tabname) {
+
 	   // タブメニュー実装
+	   
 	   document.getElementById('tab1').style.display = 'none';
+
 	   document.getElementById('tab2').style.display = 'none';
 	   document.getElementById('tab3').style.display = 'none';
+
+	   document.getElementById('tab4').style.display = 'none';
+
 	   // タブメニュー実装
+	   
 	   document.getElementById(tabname).style.display = 'block';
-	}
+}
+
 myWeek=new Array("Sun","Mon","Tue","Wed","Thu","Sun","Sat");
 function myTime(){
      myDate=new Date();

@@ -1,4 +1,4 @@
-head {
+﻿head {
    
 }
 body {
@@ -54,7 +54,7 @@ div.tabbox {
 p.tabs { margin: 0px; padding: 0px; }
 p.tabs a {
    /* ▼ リンクをタブのように見せる */
-   display: block; width: 189.6px; float: left;
+   display: block; width: 150.0px; float: left;
    margin: 0px 3px 0px 0px; padding: 3px;
    text-align: center;
    font-size:12px;
@@ -62,20 +62,35 @@ p.tabs a {
 /* ▼ タブごとの配色設定 */
 p.tabs a.tab1 {text-decoration:none; background-color:#fafafa;border-  right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(170, 0, 0, 0.85);  color: #666; font-weight:600;}
 p.tabs a.tab2 {text-decoration:none; background-color:#fafafa;border-  right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(0, 170, 0, 0.85);  color: #666; font-weight:600;}
-p.tabs a.tab3 {text-decoration:none; background-color:#fafafa;border-right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(0, 0, 170, 0.85);  color: #666; font-weight:600;}
+p.tabs a.tab3 {text-decoration:none; background-color:#fafafa;border-  right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(0, 0, 170, 0.85);  color: #666; font-weight:600;}
+p.tabs a.tab4 {text-decoration:none; background-color:#fafafa;border-  right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;border-top: 3px solid rgba(255, 183, 76, 0.85);  color: #666; font-weight:600;}
 p.tabs a:hover {opacity:0.7;filter:alpha(opacity=70);}
 
 /* ▼ タブ中身のボックス */
 div.tab {
    /* ▼ ボックス共通の装飾 */
     box-sizing:border-box;
-   height: 270px;  clear: left;
+    height: 270px;
+    clear: left;
     padding:20px;
 }
+p.Day {
+    padding-left: 30px;
+    color: red;
+}
+p.Day > ul {
+    padding-left: 45px;
+}
+p.Reload {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
 /* ▼ 各ボックスの配色設定 */
 div#tab1 { border: 2px solid #DDD; background-color: #fbfbfb; }
 div#tab2 { border: 2px solid #DDD; background-color: #fbfbfb; }
 div#tab3 { border: 2px solid #DDD; background-color: #fbfbfb; }
+div#tab4 { border: 2px solid #DDD; background-color: #fbfbfb; }
 div.tab p { margin: 0.5em; }
 
 div.profile {float:right;position:relative;width:300px;font-size:15px;right:20px;color:#555;top:-5px;}
@@ -110,6 +125,7 @@ div.AppP {position:absolute;left:1050px;top:525px;}
 	position: relative;
 	background: #f0f5da;
 	border: 4px solid #bff5f5;
+	margin-bottom: 30px;
 }
 .arrow_box:after, .arrow_box:before {
 	top: 100%;

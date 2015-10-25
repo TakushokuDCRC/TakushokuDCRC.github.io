@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
@@ -18,12 +18,25 @@
 
 
 	<p class="tabs">
-	      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">プロフィール</a>
-	      <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">メッセージ</a>
-	      <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">PCスペック</a>
+	      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">更新履歴</a>
+	      <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">プロフィール</a>
+	      <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">メッセージ</a>
+	      <a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;">PCスペック</a>
 	   </p>
-      
-	   <div id="tab1" class="tab">
+           <div id="tab1" class="tab">
+		<p class="Reload">更新履歴</p>
+		<p class="Day">2015年10月25日</p>
+			<ul>
+			<li>タブメニューに更新履歴追加</li>
+			<li>Createの"Music(仮)"追加</li>
+			</ul>
+		<p class="Day">2015年10月22日</p>
+			<ul>
+			<li>ホームページ開設</li>
+	   		</ul>
+		</div>
+
+	   <div id="tab2" class="tab">
 		
         <img src="Picture/MyIcon.png" width="230" height="230">
 		<div class = "profile">
@@ -37,7 +50,7 @@
 	   </div>
 
        
-	   <div id="tab2" class="tab">
+	   <div id="tab3" class="tab">
 		<div class = "massege">
 		<p>Twitter : Yussiy <a href="https://twitter.com/little_shiney" class="twitter-follow-button" data-show-count="false">Follow @little_shiney</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
@@ -48,7 +61,7 @@
 	　 </div>
 
         
-	   <div id="tab3" class="tab">
+	   <div id="tab4" class="tab">
 		<div class = "main">
 		<h3>メインＰＣ(デスクトップＰＣ)</h3>
 		<p>メーカー: HP Pavilion 500-310jp</p>
@@ -87,7 +100,7 @@
         <h2><a href="#">Game</a></h2>
       </li>
       <li>
-        <h2><a href="#">Music</a></h2>
+        <h2><a href="music.html">Music</a></h2>
       </li>
       <li>
         <h2><a href="#">video</a></h2>
@@ -149,40 +162,12 @@
         <li>光 / 宇多田ヒカル</li>
         <li>一番の宝物 / LiSA</li>
         
-    </div>
-    
-<!-- 折り畳み展開ポインタ 
-<div onclick="obj=document.getElementById('Video').style; obj.display=(obj.display=='none')?'block':'none';">
-    <a style="cursor:pointer;"class="css_btn_class">▼ Video</a>
-</div>
-<!--// 折り畳み展開ポインタ -->
- 
-<!-- 折り畳まれ部分 
-<div id="Video" style="display:none;clear:both;">
-    <h2>CoD:AW</h2>   
-        <a href="https://www.youtube.com/watch?v=3-OYrkJnahE" target="_blank" class="hover_youtube"><img src="https://i.ytimg.com/vi/3-OYrkJnahE/default.jpg"width="320" height="180"></a>
-    <h2>AE体験動画 その１</h2>
-        <a href="https://www.youtube.com/watch?v=VbkcLxByzPs" target="_blank" class="hover_youtube"><img src="https://i.ytimg.com/vi_webp/VbkcLxByzPs/mqdefault.webp"width="320" height="180"></a>
-    <h2>AE体験動画 その２</h2>
-        <a href="https://www.youtube.com/watch?v=zY0EGWVVhUQ" target="_blank" class="hover_youtube"><img src="https://i.ytimg.com/vi_webp/zY0EGWVVhUQ/mqdefault.webp"width="320" height="180"></a>
-</div>
-<!--// 折り畳まれ部分 -->
-
-
-<!-- 折り畳まれ部分 
-<div id="App" style="display:none;clear:both;">
-
-<h2>作成中</h2>
-
-    </div>
-<!--// 折り畳まれ部分 
-</div>-->
-		
+    </div>	
 <div class="right-top">
     
     <div class="script">
         <div id = "myIDdate">
-        <script>
+	<script>
             setInterval("myTime()",1000);
         </script>
         </div>
