@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -121,7 +127,7 @@ p {
 	z-index:-1;
 }
 
-/*‚æ‚±•À‚×ŠO•ïİ’è*/
+/*ã‚ˆã“ä¸¦ã¹å¤–åŒ…è¨­å®š*/
 .row{
 	margin-left:-1em;
 	margin-right:-1em;
@@ -131,7 +137,7 @@ p {
   content: " ";
   display: table;
 }
-/*‚æ‚±•À‚×İ’è*/
+/*ã‚ˆã“ä¸¦ã¹è¨­å®š*/
 .row div {
 	/*position: relative;*/
 	min-height: 1px;
@@ -148,7 +154,7 @@ p {
 	}
 }
 
-/*ƒcƒCƒbƒ^[ƒ^ƒCƒ€ƒ‰ƒCƒ“İ’è*/
+/*ãƒ„ã‚¤ãƒƒã‚¿ãƒ¼ã‚¿ã‚¤ãƒ ãƒ©ã‚¤ãƒ³è¨­å®š*/
 .twitter-timeline {
     width: 100% !important;
     border-radius:0 !important;
