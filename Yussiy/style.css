@@ -39,13 +39,13 @@ body {
     width:300px;
 }
 
-
 /* ▼ タブメニュー全体の設定 */
 div.tabbox {
     margin-top: 15px;
     margin-right: 0;
     margin-left: 0;
     padding: 0px;
+    overflow: scroll;   /* スクロール表示 */ 
     width:650px;
     height:300px;
 }
