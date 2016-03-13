@@ -97,7 +97,7 @@
 	}
 
 	.cbp-af-header nav a {
-		margin: 0 10px;
+		margin: 0 5px;
 	}
 
 	.cbp-af-header.cbp-af-header-shrink h1,
@@ -123,6 +123,6 @@
 @media screen and (max-width: 24em) {
 	.cbp-af-header nav a,
 	.cbp-af-header.cbp-af-header-shrink nav a {
-		line-height: 1;
+		line-height: 0.8;
 	}
 }
