@@ -45,7 +45,6 @@ div.tabbox {
     margin-right: 0;
     margin-left: 0;
     padding: 0px;
-    overflow: scroll;   /* スクロール表示 */ 
     width:650px;
     height:300px;
 }
@@ -71,6 +70,7 @@ div.tab {
    /* ▼ ボックス共通の装飾 */
     box-sizing:border-box;
     height: 270px;
+    overflow: scroll;   /* スクロール表示 */
     clear: left;
     padding:20px;
 }
