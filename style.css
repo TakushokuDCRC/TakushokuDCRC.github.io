@@ -21,11 +21,6 @@ pre {
   word-wrap: break-word;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 body {
   font-family: 'Noto Sans Japanese', serif;
   width:100%;
@@ -91,19 +86,6 @@ section {
 	  height: 500px;
 	  font-size: 6em;
 	}
-}
-
-h1, h1 a{
-	margin: 0 0 20px 0;
-	padding: 0 0 10px 0;
-	border-bottom: 4px solid #FFF;
-	font-family: 'Questrial', sans-serif;
-	line-height: 1em;
-	font-weight: bold;
-	letter-spacing: -1px;
-	color: #FFF;
-	 
-	text-shadow: black 5px 5px 0px;
 }
 
 h2{
