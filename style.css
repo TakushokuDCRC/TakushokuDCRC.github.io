@@ -50,44 +50,6 @@ section {
 	}
 }
 
-.title-box-outer{
-	width:100%;
-	display: table;
-}
-
-.title-box{
-	background-image:url("img/DCRC_koryo.mp4_000004233.png");
-	background-attachment: fixed;
-	background-position:left center;
-	background-size:cover;
-	width:100%;
-	display: table-cell;
-	vertical-align: middle;
-	height: 360px;
-	font-size: 1.5em;
-	background-image:
-	color: #FFF;
-}
-
-@media (min-width: 768px){
-	.title-box {
-	  height: 360px;
-	  font-size: 2.5em;
-	}
-}
-@media (min-width: 992px){
-	.title-box {
-	  height: 430px;
-	  font-size: 4em;
-	}
-}
-@media (min-width: 1200px) {
-	.title-box {
-	  height: 500px;
-	  font-size: 6em;
-	}
-}
-
 h2{
 	text-align: left;
 	margin: 0 0 20px 0;
