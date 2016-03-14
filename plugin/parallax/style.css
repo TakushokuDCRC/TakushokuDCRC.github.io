@@ -1,13 +1,4 @@
-html {
-  height: 100%; 
-  overflow: hidden; /* ブラウザ標準のスクロールバーを消します */
-}
- 
-body {
-  overflow-y: scroll;  /*  縦スクロールバーを表示します。 */
-  overflow-x: hidden;  /*  横スクロールバーを消します。 */                                                                                                                    
-  height: 100%; 
-}
+
 
 .parallax{
   min-height: 100px;
