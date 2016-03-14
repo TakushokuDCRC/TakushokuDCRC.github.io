@@ -39,7 +39,6 @@ body {
     width:300px;
 }
 
-
 /* ▼ タブメニュー全体の設定 */
 div.tabbox {
     margin-top: 15px;
@@ -71,6 +70,7 @@ div.tab {
    /* ▼ ボックス共通の装飾 */
     box-sizing:border-box;
     height: 270px;
+    overflow: scroll;   /* スクロール表示 */
     clear: left;
     padding:20px;
 }
