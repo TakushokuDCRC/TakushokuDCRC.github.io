@@ -25,6 +25,7 @@ body {
   font-family: 'Noto Sans Japanese', serif;
   width:100%;
   background:#bbbbbb;
+  overflow-x:hidden;
 }
 
 section {
