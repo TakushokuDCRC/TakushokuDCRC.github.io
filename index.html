@@ -110,83 +110,92 @@
 
 	<section id="section3" class="size-free">
 		<h2>Member</h2>
-		<div class="member">
-			<img src="img/Nakahiko-icon.jpeg">
-			<p class="name">なかひこ</p>
-			<p class="word">c++ / WebDesign / Drawing</p>
-			<a href="./Nakahiko">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/yoshiy50-icon.jpg">
-			<p class="name">ゆっしぃ</p>
-			<p class="word">Game / AfterEfects</p>
-			<a href="./Yussiy">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/keyenix-icon.jpg">
-			<p class="name">どろろ</p>
-			<p class="word">Waiting...</p>
-			<a href="./keyenix">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/komo91-icon.png">
-			<p class="name">コモ</p>
-			<p class="word">Java / HTML / CSS</p>
-			<a href="./komo91">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/tarouK-icon.jpg">
-			<p class="name">tarou_K.</p>
-			<p class="word">Arcade game / TRPG</p>
-			<a href="./tarou_K">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/d-kanazawa-icon.png">
-			<p class="name">かなざわー</p>
-			<p class="word">Waiting...</p>
-			<a href="./d-kanazawa">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/cka-icon.jpg">
-			<p class="name">しーか</p>
-			<p class="word">Adult game / Sound Game</p>
-			<a href="./cka">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/nono.png">
-			<p class="name">みっきぃ</p>
-			<p class="word">VB.NET-WPF / Midi / Cobol()</p>
-			<a href="./MICKey/frame.html">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/noimage.png">
-			<p class="name">OS</p>
-			<p class="word">Waiting...</p>
-			<a href="./OS">GO PAFE</a>
-		</div>
-		<div class="member">
-			<img src="img/kanzakinoko.jpg">
-			<p class="name">かんざきのこ</p>
-			<p class="word">Waiting...</p>
-			<a href="./kanzakinoko">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/桜.png">
-			<p class="name">桜嵐</p>
-			<p class="word">Waiting...</p>
-			<a href="./SakuraArashi">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/noimage.png">
-			<p class="name">さぎし</p>
-			<p class="word">Waiting...</p>
-			<a href="./sagishi">GO PAGE</a>
-		</div>
-		<div class="member">
-			<img src="img/スクリーンショット (4).png">
-			<p class="name">ぐでたまUDN</p>
-			<p class="word">GAME Planning</p>
-			<a href="./NEETMAN">GO PAGE</a>
+		<div class="grid">
+			<input type="radio" name="select-member" onchange="changeMember()" id="check-all" checked>
+			<label for="check-all">全員</label>
+			<input type="radio" name="select-member" onchange="changeMember()" id="check-grade1">
+			<label for="check-grade1">1年生</label>
+			<input type="radio" name="select-member" onchange="changeMember()" id="check-grade2">
+			<label for="check-grade2">2年生</label>
+			
+			<div class="member grid-item member-all grade2">
+				<img src="img/Nakahiko-icon.jpeg">
+				<p class="name">なかひこ</p>
+				<p class="word">c++ / WebDesign / Drawing</p>
+				<a href="./Nakahiko">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade2">
+				<img src="img/yoshiy50-icon.jpg">
+				<p class="name">ゆっしぃ</p>
+				<p class="word">Game / AfterEfects</p>
+				<a href="./Yussiy">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade2">
+				<img src="img/keyenix-icon.jpg">
+				<p class="name">どろろ</p>
+				<p class="word">Waiting...</p>
+				<a href="./keyenix">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade2">
+				<img src="img/komo91-icon.png">
+				<p class="name">コモ</p>
+				<p class="word">Java / HTML / CSS</p>
+				<a href="./komo91">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade2">
+				<img src="img/tarouK-icon.jpg">
+				<p class="name">tarou_K.</p>
+				<p class="word">Arcade game / TRPG</p>
+				<a href="./tarou_K">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade2">
+				<img src="img/d-kanazawa-icon.png">
+				<p class="name">かなざわー</p>
+				<p class="word">Waiting...</p>
+				<a href="./d-kanazawa">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade1">
+				<img src="img/cka-icon.jpg">
+				<p class="name">しーか</p>
+				<p class="word">Adult game / Sound Game</p>
+				<a href="./cka">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade1">
+				<img src="img/nono.png">
+				<p class="name">みっきぃ</p>
+				<p class="word">VB.NET-WPF / Midi / Cobol()</p>
+				<a href="./MICKey/frame.html">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade1">
+				<img src="img/noimage.png">
+				<p class="name">OS</p>
+				<p class="word">Waiting...</p>
+				<a href="./OS">GO PAFE</a>
+			</div>
+			<div class="member grid-item member-all grade1">
+				<img src="img/kanzakinoko.jpg">
+				<p class="name">かんざきのこ</p>
+				<p class="word">Waiting...</p>
+				<a href="./kanzakinoko">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade1">
+				<img src="img/桜.png">
+				<p class="name">桜嵐</p>
+				<p class="word">Waiting...</p>
+				<a href="./SakuraArashi">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade1">
+				<img src="img/noimage.png">
+				<p class="name">さぎし</p>
+				<p class="word">Waiting...</p>
+				<a href="./sagishi">GO PAGE</a>
+			</div>
+			<div class="member grid-item member-all grade2">
+				<img src="img/スクリーンショット (4).png">
+				<p class="name">ぐでたまUDN</p>
+				<p class="word">GAME Planning</p>
+				<a href="./NEETMAN">GO PAGE</a>
+			</div>
 		</div>
 		<div style="height: 50px; width: 100%;"></div>
 	</section>
@@ -250,5 +259,8 @@
 	
 	<script type="text/javascript" src="plugin/header_menu/classie.js"></script>
 	<script type="text/javascript" src="plugin/header_menu/script.js"></script>
+	
+	<script type="text/javascript" src="plugin/Packery/packery.pkgd.min.js"></script>
+	<script type="text/javascript" src="plugin/Packery/script.js"></script>
 </body>
 </html>
