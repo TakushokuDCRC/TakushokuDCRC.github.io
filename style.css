@@ -173,6 +173,10 @@ p {
     display:block;
 }
 
+#section3 input#check-director:checked ~ .member.director {
+    display:block;
+}
+
 .member img {
     margin-top:10px;
     width:100px;
