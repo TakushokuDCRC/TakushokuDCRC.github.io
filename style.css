@@ -21,6 +21,10 @@ pre {
   word-wrap: break-word;
 }
 
+html{
+	width:100%;
+}
+
 body {
   font-family: 'Noto Sans Japanese', serif;
   width:100%;
