@@ -43,10 +43,15 @@
 				white-space: nowrap;
 			}
 			
+			.photo{
+				width: 25vw;
+				box-shadow:3px 2px 5px;
+			}
 		</style>
 		
 		<script>
 			function check(){
+				var r6;
 				var a = document.getElementById("i0").value;
 				var b = document.getElementById("i1").value;
 				document.getElementById("r0").textContent = (a == b);
@@ -56,26 +61,23 @@
 				document.getElementById("r4").textContent = (a <= b);
 				document.getElementById("r5").textContent = (a >= b);
 			}
+			
 			var bgm;
-			
+
 			bgm = new Audio();
-			bgm scr ="wasted.wav";
-			bgm load();
-			
+			bgm.src = "wasted.wav";
+			bgm.load();
+
 			function play(){
-				bgm play();
+			    bgm.play();
 			}
 		</script>
 		
 		<body>
 		
-		
-		<!--強調文字等のサンプル-->
-		
-		
 		<h2 class="header">※現在制作中…</h2>
-		<h3 class="second-header">と言っていたが…</h2>
-		<h2 class="second-header">あれは嘘だ<i>(嘘です</i></h3>
+		<h2 class="second-header">と言っていたが…</h2>
+		<h3 class="second-header">あれは嘘だ<i>(嘘です</i></h3>
 		<p>
 			<!--轟～沈♪轟沈♪(救心のリズムで-->
 			<span style="font-size:2vw;">
@@ -89,7 +91,7 @@
 		
 		<!--ボタンのサンプル-->
 		
-		<input type="button" onclick="play()" value="0(:3 _ )～">
+		<input type="button" value="0(:3 _ )～" onclick="play()">
 		
 		<!--箇条書きのサンプル-->
 		
@@ -146,7 +148,7 @@
 		<!--画像出力のサンプル-->
 		
 		ワイの嫁艦<br />
-		<img class="shadow " src="testphoto.jpg" />
+		<img class="photo" src="testphoto.jpg" />
 		<br /><br />
 		<!--JavaScriptの実装-->
 		a:<input id="i0"; />
