@@ -1,0 +1,20 @@
+
+
+.parallax{
+  min-height: 100px;
+  width:100%;
+  
+  -webkit-transform::scale(1.2) rotate(-3deg);
+  -ms-transform::scale(1.2) rotate(-3deg);
+  -o-transform::scale(1.2) rotate(-3deg);
+  transform:scale(1.2) rotate(-3deg);
+  
+  background: url('../../img/sc_0126.bmp') no-repeat fixed;
+  
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}

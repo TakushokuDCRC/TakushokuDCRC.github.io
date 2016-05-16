@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang = "ja">
+	<meta charset="utf-8">
+		<head><title>0(:3 _ )～ Now Setting</title></head>
+		
+		<style>
+			h2.header{
+				border:3px dashed #000;
+				margin:0 35vw 0 35vw;
+				width:30vw;
+				font-size:4vw;
+				text-align:center;
+			}
+			
+			.second-header{
+				text-align:center;
+			}
+			
+			p{
+				text-align:center;
+				border:1px solid #000;
+				margin-left:20vw;
+				margin-right:20vw;
+			}
+			
+			ul.outside{
+				margin-left:20vw;
+				margin-right:40vw;
+				border-style:dashed;
+			}
+			
+			ul.inside{
+				margin-left:10vw;
+				margin-right:5vw;
+				border-style:dashed;
+			}
+			
+			.shadow{
+				box-shadow:3px 2px 5px;
+			}
+			
+			.not-newline{
+				white-space: nowrap;
+			}
+			
+			.photo{
+				width: 25vw;
+				box-shadow:3px 2px 5px;
+			}
+		</style>
+		
+		<script>
+			function check(){
+				var r6;
+				var a = document.getElementById("i0").value;
+				var b = document.getElementById("i1").value;
+				document.getElementById("r0").textContent = (a == b);
+				document.getElementById("r1").textContent = (a != b);
+				document.getElementById("r2").textContent = (a < b);
+				document.getElementById("r3").textContent = (a > b);
+				document.getElementById("r4").textContent = (a <= b);
+				document.getElementById("r5").textContent = (a >= b);
+			}
+			
+			var bgm;
+
+			bgm = new Audio();
+			bgm.src = "wasted.wav";
+			bgm.load();
+
+			function play(){
+			    bgm.play();
+			}
+		</script>
+		
+		<body>
+		
+		<h2 class="header">※現在制作中…</h2>
+		<h2 class="second-header">と言っていたが…</h2>
+		<h3 class="second-header">あれは嘘だ<i>(嘘です</i></h3>
+		<p>
+			<!--轟～沈♪轟沈♪(救心のリズムで-->
+			<span style="font-size:2vw;">
+				現在HTML＆CSSの学習を兼ねて作成をしております。<br /> 
+				時折謎の表示物が掲載されている場合がございますが <br />
+				あくまで学習中、あるいは編集中のものとなりますので <br />
+				あらかじめご容赦くださいませ。0(:3 _ )～
+			</span>
+		</p>
+		
+		
+		<!--ボタンのサンプル-->
+		
+		<input type="button" value="0(:3 _ )～" onclick="play()">
+		
+		<!--箇条書きのサンプル-->
+		
+		
+		おすすめの実況者さんリスト
+		<ul class="outside">
+			<span  class="not-newline">
+			<li>2BroEntertainment 
+			<ul class="inside">
+				<li>弟者</li>
+				<li>兄者</li>
+				<li>おついち</li>	
+			</ul></li></span>
+			<li>Shohei</li>
+			<li>べるくら企画</li>
+		</ul>
+		
+		
+		<!--箇条書き(数字)のサンプル
+		
+		
+		今したいこと
+		<ol>
+			<li>お金を稼ぐ
+			<ol>
+				<li>合法</li>
+				<li>非合法</li>
+			</ol></li>
+			<li>ゲーム作る</li>
+			<li>ゲームする</li>
+		</ol>
+		-->
+		
+		<!--表のサンプル-->
+		
+		
+		<table border="2" align="center">
+			<tr>
+				<td>1</td>
+				<td colspan="2">1</td>
+			</tr>
+			
+			<tr>
+				<td>1</td><td>1</td><td>1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td rowspan="2">1</td><td>1</td>
+			</tr>
+			
+		</table>
+		
+		
+		<!--画像出力のサンプル-->
+		
+		ワイの嫁艦<br />
+		<img class="photo" src="testphoto.jpg" />
+		<br /><br />
+		<!--JavaScriptの実装-->
+		a:<input id="i0"; />
+		b:<input id="i1"; />
+		<button onclick="check()">check</button>
+		<ul>
+			<li>a == b:<span id="r0"></span></li>
+			<li>a != b:<span id="r1"></span></li>
+			<li>a < b:<span id="r2"></span></li>
+			<li>a > b:<span id="r3"></span></li>
+			<li>a <= b:<span id="r4"></span></li>
+			<li>a >= b:<span id="r5"></span></li>
+		</ul>
+	</body>
+</html>

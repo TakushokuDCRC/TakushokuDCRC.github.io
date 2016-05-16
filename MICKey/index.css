@@ -1,0 +1,43 @@
+﻿body {
+	background: url("img/tile.png");
+	margin: 0px;
+	width: 100%;
+}
+span#s1 {
+	font-family: Impact;
+	font-size: 40pt;
+	font-weight: 800;
+}
+span#s2 {
+	font-size: 15pt;
+	color: #ddd;
+	font-weight: 700;
+	margin-left: 100px;
+}
+table#center {
+	width: 100%;
+}
+table#t1 {
+	width: 1000px;
+}
+table#t2 {
+	width: 1000px;
+	margin-top: -5px;
+	padding: 0px;
+}
+a {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	margin: 0px;
+	padding: 0px;
+}
+iframe {
+	border-style: none;
+}
+td#tw {
+	margin-top: -5px;
+	background: #fff;
+	width: 350px;
+}
