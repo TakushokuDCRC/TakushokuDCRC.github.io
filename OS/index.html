@@ -4,11 +4,50 @@
 		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">
 		<title>programming beginer OS</title>
 		<style type="text/css">
-			<!--
-				body { background : url('bg.png') no-repeat fixed center center }
-				.welcome { font-size : 33pt; color :red }
-				.go { font-size : 22pt; color : green }
-			-->
+		<!--
+			/*@media only screen and (max-width: 767px) {*/
+				body { 
+					/*画像ファイルの指定*/
+					background-image: url(bg.gif);
+					/*画像を上下左右の中央に*/
+					background-position: center center;
+					/* 画像をタイル状に繰り返し表示しない */
+					background-repeat: no-repeat;
+					/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+					background-attachment: fixed;
+					/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+					background-size: cover;
+					/*背景画像が読み込まれる前表示される背景色*/
+					background-color: #464646;
+				}	
+			/*}*/	
+			.welcome { 
+				font-size: 33pt; 
+				color: red;
+			}
+			.go {
+				font-size: 20px;
+				color: green;
+			}
+			.table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+			.table th {
+				width: 50%;
+				padding: 10px;
+				text-align: center;
+				vertical-align: top;
+				background-image: url(bg.png);
+				color: seagreen;
+				border: 1px solid #b9b9b9;
+			}
+			.table td {
+				background-size: cover;
+				align-content: center;
+				border: 1px solid #b9b9b9;
+			}
+		-->
 		</style>
 	</head>
 
@@ -49,47 +88,74 @@
 		function audioPause(){
 			document.getElementById("audio").pause();
 		}
-	//-->
+	-->
 	</script>
 
 	<body>
 		<div class="content">
 			<hr width="100%">
-				<a href="index.html">top</a>
-					<a href="about.html">profile</a><br>
+				<a href="index.html">TOP</a>
+				<a href="about.html">PROFILE</a><br>
 			<hr width="100%"><br><br>
-
-		
-
-			<input type="button" name="ニコニコ本社爆破" value="0" id="cde" align="right"/>
-			<input type="button" value="reset" id="reset" align="right"/>
-
-			<script language="javascript">
-			<!--
-				mydate=new Date();
-				Ye=mydate.getFullYear()+"年";
-				Mo=mydate.getMonth()+1+"月";
-				Da=mydate.getDate()+"日";
-				Day=mydate.getDay();
-				Day2=new Array(7);
-				Day2[0]="日";
-				Day2[1]="月";
-				Day2[2]="火";
-				Day2[3]="水";
-				Day2[4]="木";
-				Day2[5]="金";
-				Day2[6]="土";
-				document.write("<font style='font-size : 16px; color : #666666'>");
-				document.write("本日は"+Ye+Mo+Da+"（"+Day2[Day]+"）");
-				document.write("です</font>");
-			//-->
-			</script>
+			
+		<input type="button" name="ニコニコ本社爆破" value="0" id="cde" align="right"/>
+		<input type="button" value="reset" id="reset" align="right"/>
+		<script language="javascript">
+		<!--
+			mydate=new Date();
+			Ye=mydate.getFullYear()+"年";
+			Mo=mydate.getMonth()+1+"月";
+			Da=mydate.getDate()+"日";
+			Day=mydate.getDay();
+			Day2=new Array(7);
+			Day2[0]="日";
+			Day2[1]="月";
+			Day2[2]="火";
+			Day2[3]="水";
+			Day2[4]="木";	
+			Day2[5]="金";
+			Day2[6]="土";
+			document.write("<font style='font-size: 16px; color: darkgreen'>");
+			document.write("本日は"+Ye+Mo+Da+"（"+Day2[Day]+"）");
+			document.write("です</font>");
+		-->
+		</script>
 
 			<h1 align="center"; class="welcome"><b>ようこそ（大嘘）</b></h1>
-				<h2 align="center"; class="go">ゆっくりしていってね<s><font size="4">(早ク出テケ)</font></s></h2>
-			<div class="contents-right">
-				<a class="twitter-timeline" href="https://twitter.com/Durandal2010/lists/mizukinana" data-widget-id="657169469567926272">https://twitter.com/Durandal2010/lists/mizukinanaのツイート</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>		
-			</div>
+			<h2 align="center"; class="go">ゆっくりしていってね<s><font size="4">(早ク出テケ)</font></s></h2>
+		<table class="table">
+			<tbody>
+				<tr>
+					<th>
+						<p font style="font-size: 20px">Twitter</p><br><br><br>
+						<div class="contents-right">
+							<a class="twitter-timeline" href="https://twitter.com/Durandal2010/lists/mizukinana" data-widget-id="657169469567926272">https://twitter.com/Durandal2010/lists/mizukinanaのツイート</a>
+							<script>
+								!function(d,s,id){
+									var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+									if(!d.getElementById(id)){
+										js=d.createElement(s);
+										js.id=id;
+										js.src=p+"://platform.twitter.com/widgets.js";
+										fjs.parentNode.insertBefore(js,fjs);
+									}
+								}
+								(document,"script","twitter-wjs");
+							</script>	
+						</div>
+					</th>
+					<th>
+						<p font style="font-size: 20px">家に届きました。</p><br>
+						<img src="nana_mBox.jpg" alt="Box" width="326" height="194"></img><br><br>
+						<p font style="font-size: 20px">結構好きな曲です。</font><br><br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/6zYVC3pLZx8" frameborder="0" allowfullscreen></iframe>
+					</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>	
 	</body>
 </html>
