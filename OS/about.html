@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">
+		<title>programming beginer OS</title>
+		<style type="text/css">
+		<!--
+			body { 
+				background-image : url(yakei.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				background-color: black;
+			}
+			.welcome { font-size: 33pt; color:red }
+			.go { font-size: 22pt; color: green }
+		-->
+		</style>
+	</head>
+
+
+	<script type="text/javascript">
+	<!--
+		window.onload = function() {
+			var targetBtn = document.getElementById("cde");
+			var resetBtn = document.getElementById("reset");
+
+			var keikoku = "登録ありがとうございました。\n至急お金を振り込んでください。";
+			alert(keikoku);
+	
+			var num = targetBtn.value;
+			var name = targetBtn.name;
+
+			targetBtn.onclick = function(){
+				num++;
+				targetBtn.value = name + num;
+				if(num == 10) {
+					alert("やったぜ！");
+				} else {
+					if(num ==100) {
+						alert("Congratulation!!");
+					}
+				}
+			}
+
+			resetBtn.onclick = function(){
+				num =0;
+				targetBtn.value = name + num;
+			}
+
+			targetBtn.value = name + num
+		}
+
+		
+	//-->
+	</script>
+
+	<body>
+		<hr width="100%">
+			<a href="index.html">TOP</a>
+			<a href="about.html">PROFILE</a><br>
+		<hr width="100%"><br><br>
+
+		<input type="button" name="ニコニコ本社爆破" value="0" id="cde" align="right"/>
+		<input type="button" value="reset" id="reset" align="right"/>
+
+		<script language="javascript">
+		<!--
+			mydate=new Date();
+			Ye=mydate.getFullYear()+"年";
+			Mo=mydate.getMonth()+1+"月";
+			Da=mydate.getDate()+"日";
+			Day=mydate.getDay();
+			Day2=new Array(7);
+			Day2[0]="日";
+			Day2[1]="月";
+			Day2[2]="火";
+			Day2[3]="水";
+			Day2[4]="木";
+			Day2[5]="金";
+			Day2[6]="土";
+			document.write("<font style='font-size: 16px; color: red'>");
+			document.write("本日は"+Ye+Mo+Da+"（"+Day2[Day]+"）");
+			document.write("です</font>");
+		//-->
+		</script>
+
+		<p font style="font-size: 50px; color: yellow">
+			ドーモ、プログラミング初心者の者です。<br>
+			遊びが(ニコニコ本社爆破しか)ないです<br>
+			プログラミングはあまり得意じゃないんで<br>
+			夜賂氏苦<br>
+			因みに背景は自分が取りました。
+		</p>
+		<hr width="5000">
+		<a href="index.html">戻る</a>
+	</body>
+</html>
