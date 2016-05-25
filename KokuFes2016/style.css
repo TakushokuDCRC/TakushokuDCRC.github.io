@@ -27,7 +27,7 @@ p {
 	padding: 0 100px 0 100px;
 	line-height: 50px;
 	font-size: 30px;
-	font-family: font-family: "ü‡ÉSÉVÉbÉN", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ÇlÇr ÉSÉVÉbÉN", sans-serif;
+	font-family: font-family: "Ê∏∏„Ç¥„Ç∑„ÉÉ„ÇØ", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Ôº≠Ôº≥ „Ç¥„Ç∑„ÉÉ„ÇØ", sans-serif;
 	font-weight: ;
 }
 
@@ -54,19 +54,6 @@ h2 {
     border-bottom: 10px solid #b6f0fc;
     width: 90%;
 }
-
-/*
-h2:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    content: '';
-    width: 90%;
-    border-bottom: 10px solid #b6f0fc;
-   /* box-shadow: -1px 1px 2px rgba(0,0,0,.1); */
-}
-*/
 
 h3 {
 	text-align: center;
@@ -96,18 +83,6 @@ ul.waku li {
 	
 }
 
-
-
-/*
-#content {
-    margin: ;
-    padding: 0px 0px 500px 0px;
-    background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8))fixed,
-  url(http://jsrun.it/assets/y/X/s/r/yXsrP.jpg);
-    background-size: cover;
-    width: 100%;
-}
-*/
 .waku {
 	
 	margin:0 20px;
@@ -134,6 +109,10 @@ ul.waku li {
 
 #about {
 	background: #aaa;
+}
+
+#movie {
+	background: #ccc;
 }
 
 #content {
