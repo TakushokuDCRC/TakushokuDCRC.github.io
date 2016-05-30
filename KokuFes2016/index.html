@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="utf-8">
@@ -8,7 +8,8 @@
             user-scalable=no, inital-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
 	<title>DCRC-KokuFes-</title>
-
+	<script type="text/javascript" src="index.js"></script>
+	<script type='text/javascript' src='https://www.youtube.com/iframe_api'></script>
     </head>
 
     <body>
@@ -34,7 +35,7 @@
 
 	<section id="movie">
 		<h2>Movie</h2>
-		
+		<a id="movie_link" href="javascript:void(0);" onclick="setVisible()"><img id="sam" src="img/youtube.PNG"></a>
 	</section>
     
     	<section id="content">
@@ -85,5 +86,14 @@
 		<a href="https://twitter.com/Takushoku_DCRC">Twitter</a>
 		<a href="http://takushokudcrc.hatenablog.com/">HatenaBlog</a>
     	</section>
+	
+		<!--動画を表示する要素、平時は表示されない!-->
+		<div id="movie_frame">
+			<table id="movie_table"><tr><td id="movie_td" align="center" valign="middle" onclick="setHidden()">
+				<div id="movie_div"></div>
+				<a href="javascript:void(0)" id="batsu"><span>×</span></a>
+			</td></tr></table>
+		</div>
+	
     </body>
 </html>
