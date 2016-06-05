@@ -1,92 +1,125 @@
-﻿* {
-  margin: 0;
-  padding: 0;
-  border: 0;
+﻿@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-weight: 500;
 }
 
 html {
-    width: 100%;
-    overflow-x: hidden;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 body {
-    width: 100vw;
-    background: #aaa;
-    font: sans-serif;
-    overflow-x: hidden;
+	width: 100vw;
+	background: #aaa;
+	font: sans-serif;
+	overflow-x: hidden;
 }
 
 section {
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 30px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 2em 0 4em 1em;
 }
 
-p { 
-	padding: 0 100px 0 100px;
+p {
+	padding: 0 100px;
 	line-height: 50px;
-	font-size: 30px;
+	font-size: 25px;
 	font-family: font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
-	font-weight: ;
+}
+
+div {
+	display: block;
+	padding: 0px 0;
 }
 
 h1 {
-    text-align: center;
-    padding: 0 0 30px 0;
-    font-size: 30pt;
-    font-family: ;
-    font-weight: 1em;
-    color: #fff;
-    
+	text-align: center;
+	padding: 0 0 30px 0;
+	font-size: 30pt;
+	font-family: 'Noto Sans Japanese', "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;;
+	font-weight: 800;
+	color: #fff;
 }
 
 h2 {
-    text-align: left;
-    position: relative;
-    margin: 0 0 20px 0;
-    padding: .25em 0 .3em .75em;
-    font-size: 26pt;
-    font-family: ;
-    font-weight: ;
-    color: #555;
-    border-left: 8px solid #6C83EC;
-    border-bottom: 10px solid #b6f0fc;
-    width: 90%;
+	text-align: left;
+	position: relative;
+	margin: 0 0 .80em 0;
+	padding: .25em 0 .3em .75em;
+	font-size: 26pt;
+	font-family: 'Noto Sans Japanese', "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;;
+	font-weight: ;
+	color: #555;
+	border-left: 8px solid #6C83EC;
+	border-bottom: 10px solid #b6f0fc;
+	width: 90%;
 }
 
 h3 {
 	text-align: center;
 	position: relative;
-	margin: 30px 0 30px 40px;
-	padding: 20px 0;
+	margin: 0;
+	padding: .60em 0;
+	content: "";
 	font-size: 30pt;
-	font-family: ;
-	font-weight: ;
+	font-family: 'Noto Sans Japanese', "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;;
+	font-weight: 700;
 	color: #111;
 }
 
-
-
-ul.action li {
-	display: inline-block;
-	vertical-align: middle;
+.cont {
+	padding: 30px 0;
 }
 
-ul.action li img {
-	margin-right: auto;
+.frame {
+	padding: 0em;
+	margin: 0em;
 }
 
-ul.waku li {
-	display: inline-block;
-	vertical-align: middle;
-	
+.frame:before,
+.frame:after {
+	content: " ";
+	display: table;
 }
 
-.waku {
+.prof div {
+	min-height: 1px;
+	padding-left: .80em;
+	padding-right: .80em;
+}
+
+.col-6 p {
+	margin: 15px 0 0 0;
+	padding: 0px;
+	line-height: 350%;
+}
+
+@media (min-width: 768px) {
+	.col-4 {
+		float: left;
+		width: 52%;
+	}
+	.col-6 {
+		float: left;
+		width: 48%;
+	}
 	
-	margin:0 20px;
+	.col-7 {
+		float: left;
+		width: 60%;
+	}
 	
+	.col-3 {
+		float: left;
+		width: 40%;
+	}
 }
 
 .matrix {
@@ -101,14 +134,17 @@ ul.waku li {
 	vertical-align: middle;
 }
 
-
 #top {
 	padding: 300px 30px 300px 30px;
-	background: linear-gradient(-135deg, #95B19E, #F0C4F2)fixed;
+	background: linear-gradient(-135deg, #95B19E, #F0C4F2),fixed;
 }
 
 #about {
 	background: #aaa;
+}
+
+#about p {
+	font-size: 30px;
 }
 
 #movie {
@@ -117,6 +153,17 @@ ul.waku li {
 
 #content {
 	background: #bbb;
+}
+
+#link {
+	text-align: center;
+}
+
+#link a {
+	padding: 0em 0.5em;
+	font-weight: 800;
+	font-size: 18px;
+	color: #111;
 }
 
 #sam {
@@ -162,6 +209,33 @@ ul.waku li {
 	font-size: 25pt;
 }
 
-@media screen and (max-width:320px) {
-    
+//iPhone
+@media screen and (min-width:0px) and (max-device-width:320px) {
+	h1 {
+		font-size: 20pt;
+	}
+	
+	#about p {
+		font-size: 20px;
+	}
+	
+	#about .prof .col-4 {
+		width: 75%;
+	}
+}
+
+//Tab
+@media screen and (min-width: 321px) and (max-device-width:920px) {
+	#content p {
+		font-size: 20px;
+	}
+	
+	#content .frame .col-3 {
+		width: 75%;
+	}
+}
+
+//PC
+@media screen and (min-width:921px) {
+	
 }
