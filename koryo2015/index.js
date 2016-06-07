@@ -19,7 +19,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        videoId: '2NrPrFURjNY',
+        videoId: 'HUjOUpBxwkE',
         playerVars:{
             'wmode': 'transparent',
             'loop':'1',
@@ -27,7 +27,7 @@ function onYouTubeIframeAPIReady() {
             'controls':'0',
             'iv_load_policy':'3',
             'rel':'0',
-            'playlist':'2NrPrFURjNY',
+            'playlist':'HUjOUpBxwkE',
             'disablekb':'1',
             'autoplay':'1'
         },
