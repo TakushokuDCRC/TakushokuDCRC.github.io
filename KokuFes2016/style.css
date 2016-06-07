@@ -214,6 +214,11 @@ h4 {
 	font-size: 20pt;
 }
 
+#movie_div {
+	color: white;
+	font-weight: 900;
+}
+
 #batsu {
 	position: relative;
 	text-decoration: none;
