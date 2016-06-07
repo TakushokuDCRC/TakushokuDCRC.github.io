@@ -35,7 +35,13 @@
 
 	<section id="movie" align="center">
 		<h2>Movie</h2>
-		<a id="movie_link" href="javascript:void(0);" onclick="setVisible()"><img id="sam" src="img/youtube.PNG"></a>
+		<div style="text-align: center;" id="movie_switch">
+		<a id="movie_link" href="javascript:void(0);" onclick="setVisible()"><img id="sam" src="img/youtube.PNG" style="display: inline-block;"></a><br>
+		<span style="color: #300; font-size: 15pt; font-weight: 600;">30秒紹介動画を公開中！</span>
+		</div>
+		<div>
+			<div id="movie_smart"></div>
+		</div>
 	</section>
     
     	<section id="content">
@@ -44,10 +50,17 @@
 		<div class="frame">
 		<h3>- Game -</h3>
 			<div class="col-7">
-				<p>hoge</p>
+				<p>ゲーム班は個々人でWORF RPGエディターやJavaScript、Cなどのプログラミング言語を用いて作成に取り組んでいます。<br>
+				人数が多いので様々なゲームが作られています。<br><br>
+				今回あげさせてもらった画像は上から順に戦略ゲーム、横スクロールアクションゲーム、脱出ゲームです。<br>
+				なにやらどこかで見たことあるような可愛らしいキャラクターもいますね。<br>
+				また、協力して作成しているゲームもあるんだとか・・・。<br><br>
+				国際フェスティバル当日に展示されるかも？？</p>
 			</div>
 			<div class="col-3">
-				<img style=width: 100% src="img/coming.jpg">
+				<img style="width: 90%; margin: 10px;" src="img/game1.jpg">
+				<img style="width: 90%; margin: 10px;" src="img/game2.png">
+				<img style="width: 90%; margin: 10px;" src="img/game3.png">
 			</div>
 		</div>
 		
@@ -55,11 +68,19 @@
 		<h3>- Music -</h3>
 			<div class="action">
 				<div class="col-7">
-					<p>hoge</p>
+					<p>音楽班は個々人が異なった環境でDTM（デスクトップミュージック）作成に取り組んでいます。<br>
+					ハードコアからボーカロイド曲まで、個性溢れる楽曲が作られています。<br>
+					今回作曲された楽曲は国際フェスティバル当日に公開される他、ダウンロード配信も行われる予定となっています。</p>
 				</div>
 				
 				<div class="col-3">
-					<img style=width: 100% src="img/coming.jpg">
+					<img height="500" src="img/dtm.jpg">
+				</div>
+				
+				<div id="dtm_sample">
+					<h4>- Sample -</h4>
+					<iframe width="40%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267282115&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>　
+					<iframe width="40%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267568523&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 				</div>
 			</div>
 		</div>
@@ -115,7 +136,6 @@
 		<div id="movie_frame">
 			<table id="movie_table"><tr><td id="movie_td" align="center" valign="middle" onclick="setHidden()">
 				<div id="movie_div"></div>
-				<a href="javascript:void(0)" id="batsu"><span>×</span></a>
 			</td></tr></table>
 		</div>
 	

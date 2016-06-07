@@ -74,6 +74,11 @@ h3 {
 	color: #111;
 }
 
+h4 {
+	font-family: 'Noto Sans Japanese', "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;;
+	font-weight: 800;
+}
+
 .cont {
 	padding: 30px 0;
 }
@@ -166,9 +171,16 @@ h3 {
 	color: #111;
 }
 
+#dtm_sample {
+	float: none;
+	/*margin-top: 20px;*/
+	text-align: center;
+}
+
 #sam {
-	width: 400px;
-	opacity: 0.8;
+	width: 500px;
+	opacity: 0.5;
+	transition: 1s;
 }
 
 #sam:hover {
@@ -209,7 +221,7 @@ h3 {
 	font-size: 25pt;
 }
 
-//iPhone
+/*iPhone*/
 @media screen and (min-width:0px) and (max-device-width:320px) {
 	h1 {
 		font-size: 20pt;
@@ -224,7 +236,7 @@ h3 {
 	}
 }
 
-//Tab
+/*Tab*/
 @media screen and (min-width: 321px) and (max-device-width:920px) {
 	#content p {
 		font-size: 20px;
@@ -235,7 +247,7 @@ h3 {
 	}
 }
 
-//PC
+/*PC*/
 @media screen and (min-width:921px) {
 	
 }
