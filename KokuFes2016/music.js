@@ -7,3 +7,6 @@
 		}else{
 			document.getElementById("back").style.top = window.scrollY + "px";
 		}
+	};
+};
+
