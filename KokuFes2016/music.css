@@ -1,0 +1,92 @@
+﻿html {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: #f60;
+	text-decoration: none;
+}
+
+#back {
+	background: linear-gradient(45deg, #f90, #1c0),fixed;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	display: table;
+}
+
+#back_text {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 100pt;
+	font-weight: 900;
+	text-align: center;
+}
+
+#main {
+	position: relative;
+	top: 100vh;
+	margin-top: 10px;
+	padding: 10px 5% 20px 5%;
+	background-color: #ffe;
+	height: 1500px;
+	width: 95vw;
+}
+
+.midashi {
+	margin-top: 10px;
+	padding: 3px;
+	width: 85%;
+	font-size: 25pt;
+	font-weight: 700;
+	background-color: #ffb;
+	border-left: solid 40px #d33;
+	border-bottom: solid 2px #d33;
+}
+
+.komidashi {
+	margin: 5px 5px 0px 5px;
+	padding: 3px;
+	width: 85%;
+	font-size: 20pt;
+	font-weight: 700;
+	background-color: #ffb;
+	border-left: solid 30px #33d;
+	border-bottom: solid 2px #33d;
+}
+
+.music_group {
+	margin: 0px 5px 20px 5px;
+	padding: 5px;
+	width: 87.5%;
+	border-left: solid 2px #33d;
+	border-bottom: solid 2px #33d;
+}
+
+.text {
+	width: 85%
+	margin: 0px 0px 50px 0px;
+	padding: 10px 5px 10px 5px;
+	font-size: 20pt;
+	line-height: 150%;
+}
+
+.coment {
+	width: 100%;
+	padding: 10px 0px 20px 0px;
+	margin: 5px 5px 20px 5px;
+	font-size: 15pt;
+	border-bottom: solid 2px #f60;
+}
+
+.music_frame {
+	margin: 10px 5px 0px 5px;
+}
