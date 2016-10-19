@@ -66,3 +66,20 @@
         </div>
    		</div>
    </body>
+   <script type="text/javascript">
+     changeScale(document.body , window.innerWidth / 1500);
+     function changeScale(element,ratio){
+      element.style = 
+          +"transform-origin:top left;"
+          +"-moz-transform-origin:top left;"
+          +"-webkit-transform-origin:top left;"
+          +"-o-transform-origin:top left;"
+          +"-ms-transform-origin:top left;"
+          +"transform:scale("+ratio+");"
+          +"-o-transform:scale("+ratio+");"
+          +"-webkit-transform:scale("+ratio+");"
+          +"-moz-transform:scale("+ratio+");"
+          +"-ms-transform:scale("+ratio+");"
+     }
+   </script>>
+</html>
