@@ -71,22 +71,29 @@
    <script type="text/javascript">
     
     window.onresize = function(){
-      changeScale(document.body , window.innerWidth / 1500);
+      changeScale(document.body , 1500);
     };
-    changeScale(document.body , window.innerWidth / 1500);
+    changeScale(document.body , 1500);
 
-     function changeScale(element,ratio){
-      element.style = 
-          +"transform-origin:top left;"
-          +"-moz-transform-origin:top left;"
-          +"-webkit-transform-origin:top left;"
-          +"-o-transform-origin:top left;"
-          +"-ms-transform-origin:top left;"
-          +"transform:scale("+ratio+");"
-          +"-o-transform:scale("+ratio+");"
-          +"-webkit-transform:scale("+ratio+");"
-          +"-moz-transform:scale("+ratio+");"
-          +"-ms-transform:scale("+ratio+");"
+     function changeScale(element,max){
+      ratio = Math.min(window.innerWidth,max) / max;
+      
+      var style = 
+        +"transform-origin:top left;"
+        +"-moz-transform-origin:top left;"
+        +"-webkit-transform-origin:top left;"
+        +"-o-transform-origin:top left;"
+        +"-ms-transform-origin:top left;"
+        +"transform:scale("+ratio+");"
+        +"-o-transform:scale("+ratio+");"
+        +"-webkit-transform:scale("+ratio+");"
+        +"-moz-transform:scale("+ratio+");"
+        +"-ms-transform:scale("+ratio+");"
+      
+      if(window.innerWidth>max)
+        style += "margin-left:"+((window.innerWidth-max)/2)+"px;"
+
+      element.style = style;
      }
    </script>
 </html>
