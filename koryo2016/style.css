@@ -98,64 +98,15 @@ div #header img {
    border-radius: 10px 10px 10px 10px;
 }
 
-/* movie */
-.tabs .tab1 {
+/* タブボタン */
+.tabs a {
 	background-color: black; color: white;
 	text-decoration: none;
-}
-
-
-.tabs .tab1:hover {
-	background: rgba(0,0,0,0.7);
-}
-
-/* game */
-.tabs .tab2 {
-	background-color: black; color:white;
-	text-decoration: none;
-}
-
-
-.tabs .tab2:hover {
-	background: rgba(0,0,0,0.7);
-}
-
-/* music */
-.tabs .tab3 {
-	background-color: black; color: white;
-	text-decoration: none;
-}
-
-.tabs .tab3:hover {
-	background: rgba(0,0,0,0.7);
-}
-
-/* web */
-.tabs .tab4 {
-	background-color: black; color: white;
-	text-decoration: none;
-}
-
-.tabs .tab4:hover {
-	background: rgba(0,0,0,0.7);
-}
-
-/* device */
-.tabs .tab5 {
-	background-color: black; color: white;
-	text-decoration: none;
-}
-
-.tabs .tab5:hover {
-	background: rgba(0,0,0,0.7);
-}
-
-p.tabs a:hover {
-	color: orange;
-}	
-
-p.tabs a{
 	font-family: Comic Sans MS;
+}
+p.tabs a:hover {
+	background: rgba(0,0,0,0.7);
+	color: orange;
 }
 
 /* タブ中身 */
