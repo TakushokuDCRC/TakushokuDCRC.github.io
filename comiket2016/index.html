@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <meta charset="utf-8">
+      <meta name="Description" content=""/>
+      <meta name="Keywords" content=""/>
+      <meta name="viewport" content=""/> 
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <title>DCRC- Comic Market -</title>
+      <script type="text/javascript" src="index.js"></script>
+   </head>
+
+   <body>
+
+	<!--ページの表示内容!-->
+	<div id="main">
+
+		<div id="title" class="parts">
+		拓殖大学<br>
+		ディジタルコンテンツ<br>
+		研究愛好会<br>
+		C90出店決定！！
+		</div>
+
+		<div id="gaiyo" class="parts">
+			<div class="midashi">
+			What's DCRC?
+			</div>
+			<div style="float: left;">
+			<img src="img/DCRC_black.jpg" style="border: solid 1px black;">
+			</div>
+			<div>
+			ディジタルコンテンツ研究愛好会（DCRC）とは、「勉学と創作の両立」を信条に、2014年冬に創立された新鋭サークルです。拓殖大学工学部の学生が中心となって活動している<span style="color: red;">”自称”</span>（←ココ重要）クリエイター集団です。
+			</div>
+		</div>
+
+		<div id="contents" class="parts">
+			<div class="midashi">
+			Contents
+			</div>
+			主にIT系の小冊子を販売する予定となっています。<br>
+			その他に、音楽班の作曲した楽曲や、<br>ゲーム班の作ったゲームの配布等も予定しています。
+		</div>
+
+		<div id="news" class="parts">
+			<div class="midashi">
+			News
+			</div>
+			<iframe src="news.html" width="90%" height="300px" style="background-color: #fff; border: solid 1px black;"></iframe>
+		</div>
+
+		<div id="link" class="parts">
+			<div class="midashi">
+			Link
+			</div>
+			<a href="https://twitter.com/Takushoku_DCRC" target="_blank">ディジコンTwitterアカウント</a><br>
+			<a href="http://takushokudcrc.github.io/" target="_blank">ディジコンホームページ</a>
+		</div>
+
+	</div>
+
+	<!--ページトップに戻るボタン!-->
+	<a href="javascript:void(0);" onclick="scrollElm(document.documentElement)">
+		<div id="back_button">
+			<p id="menu_text">
+			▲<br>━
+			</p>
+		</div>
+	</a>
+
+	<!--menuを開くボタン!-->
+	<a href="javascript:void(0);" onclick="menu_vis()">
+		<div id="menu_button">
+			<p id="menu_text">
+			menu
+			</p>
+		</div>
+	</a>
+
+	<!--メニューボタンをポチると出てくるメニュー!-->
+	<div id="menu">
+		<a href="javascript:void(0);" onclick="menu_hid()">
+			<div id="menu_close">
+				<div id="menu_close_text">
+				×
+				</div>
+			</div>
+		</a>
+		<div id="menu_content">
+		<h2>メニュー</h2>
+		<a href="javascript:void(0);" onclick="scrollElm(getE('title'))">
+		・ページタイトル
+		</a><br>
+		<a href="javascript:void(0);" onclick="scrollElm(getE('gaiyo'))">
+		・概要
+		</a><br>
+		<a href="javascript:void(0);" onclick="scrollElm(getE('contents'))">
+		・コンテンツ
+		</a><br>
+		<a href="javascript:void(0);" onclick="scrollElm(getE('news'))">
+		・更新情報
+		</a><br>
+		<a href="javascript:void(0);" onclick="scrollElm(getE('link'))">
+		・リンク
+		</a><br>
+		</div>
+	</div>
+
+   </body>
+</html>
