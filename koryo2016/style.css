@@ -10,13 +10,12 @@ html {
 
 body {
 	background-color: rgba(0,0,0,0.3);
-
+	margin: 0;
 }
 
 div #title {
 	text-align: center;
 	font-size: 50px;
-
 }
 
 div #header h1{
