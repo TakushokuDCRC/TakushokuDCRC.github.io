@@ -152,7 +152,7 @@ p {
 .home__main-icon {
 	width:100%
 	text-align: center;
-	
+
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -324,3 +324,17 @@ p {
 }
 
 */
+
+#news::-webkit-scrollbar{
+    width: 15px;
+}
+#news::-webkit-scrollbar-thumb{
+    background: #F70841;
+    border-radius: 10px;
+}
+#news::-webkit-scrollbar-track-piece:start{
+    background: #ffa5ba;
+}
+#news::-webkit-scrollbar-track-piece:end{
+    background: #fff;
+}
