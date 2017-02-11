@@ -183,6 +183,10 @@ p {
     display:block;
 }
 
+#section3 input#check-grade3:checked ~ .member.grade3 {
+    display:block;
+}
+
 #section3 input#check-director:checked ~ .member.director {
     display:block;
 }
