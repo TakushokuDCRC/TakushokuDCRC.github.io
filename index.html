@@ -9,6 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
+
 <link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
 
 <!-- ヘッダーメニューの実装 -->
@@ -23,6 +24,7 @@
 		<div class="cbp-af-inner">
 			<h1>DCRC's page</h1>
 			<nav>
+				<a href="#section0">NEWS</a>
 				<a href="#section1">WELCOME</a>
 				<a href="#section2">About us</a>
 				<a href="#section3">Member</a>
@@ -31,9 +33,19 @@
 		</div>
 	</div>
 
-	
+
 	<div class="parallax"></div>
 	<div class="parallax"></div>
+	<div class="parallax"></div>
+
+	<section id="section0">
+		<h2>NEWS</h2>
+		<div style="width:100%;height:250px;background:rgba(255,255,255,0.6);overflow:auto;-webkit-overflow-scrolling:touch;">
+			<iframe id="news" src="news.html" style="width:100%;height:240px;" scrolling="yes"></iframe>
+		</div>
+	</section>
+
+
 	<div class="parallax"></div>
 
 
@@ -105,109 +117,114 @@
 
 	<section id="section3">
 		<h2>Member</h2>
-		<div class="grid">
-		
-			<input type="radio" name="select-member" onchange="changeMember()" id="check-all" checked>
+		<div class="" style="height:40px">
+			<input type="radio" name="select-member" onchange="changeMember(this.id)" id="check-all" checked>
 			<label for="check-all">全員</label>
-			<input type="radio" name="select-member" onchange="changeMember()" id="check-director">
+			<input type="radio" name="select-member" onchange="changeMember(this.id)" id="check-director">
 			<label for="check-director">役員</label>
-			<input type="radio" name="select-member" onchange="changeMember()" id="check-grade1">
-			<label for="check-grade1">2年生</label>
-			<input type="radio" name="select-member" onchange="changeMember()" id="check-grade2">
-			<label for="check-grade2">3年生</label>
-			
-			<div class="member grid-item grade2 director">
+		</div>
+		<div class="" style="height:80px">
+			<input type="radio" name="select-member" onchange="changeMember(this.id)" id="check-grade2">
+			<label for="check-grade2">2年生</label>
+			<input type="radio" name="select-member" onchange="changeMember(this.id)" id="check-grade3">
+			<label for="check-grade3">3年生</label>
+			<input type="radio" name="select-member" onchange="changeMember(this.id)" id="check-grade4">
+			<label for="check-grade4">4年生</label>
+		</div>
+		<div class="grid">
+
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/Nakahiko-icon.jpeg">
 				<p class="name">なかひこ</p>
 				<p class="word">c++ / WebDesign / Drawing</p>
-				<a href="./Nakahiko">GO PAGE</a>
+				<a href="http://takanakahiko.me">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade2 director">
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/yoshiy50-icon.jpg">
 				<p class="name">ゆっしぃ</p>
 				<p class="word">Game / AfterEfects</p>
-				<a href="./Yussiy">GO PAGE</a>
+				<a href="./members/Yussiy">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade2 director">
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/keyenix-icon.jpg">
 				<p class="name">どろろ</p>
 				<p class="word">Waiting...</p>
-				<a href="./keyenix">GO PAGE</a>
+				<a href="./members/keyenix">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade2 ">
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/komo91-icon.png">
 				<p class="name">コモ</p>
 				<p class="word">Java / HTML / CSS</p>
-				<a href="./komo91">GO PAGE</a>
+				<a href="./members/komo91">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade2">
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/tarouK-icon.jpg">
 				<p class="name">tarou_K.</p>
 				<p class="word">Aviutl / motion graphics</p>
-				<a href="./tarou_K">GO PAGE</a>
+				<a href="./members/tarou_K">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade2">
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/d-kanazawa-icon.png">
 				<p class="name">かなざわー</p>
 				<p class="word">Waiting...</p>
-				<a href="./d-kanazawa">GO PAGE</a>
+				<a href="./members/d-kanazawa">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade1">
-				<img src="img/cka-icon.jpg">
-				<p class="name">しーか</p>
-				<p class="word">Adult game / Sound Game</p>
-				<a href="./cka">GO PAGE</a>
-			</div>
-			<div class="member grid-item grade1">
-				<img src="img/nono.png">
-				<p class="name">みっきぃ</p>
-				<p class="word">JavaScript / Midi</p>
-				<a href="./MICKey/frame.html">GO PAGE</a>
-			</div>
-			<div class="member grid-item grade1">
+			<div class="member grid-item grade3 director" style="display: none;">
 				<img src="img/noimage.png">
 				<p class="name">OS</p>
 				<p class="word">Waiting...</p>
-				<a href="./OS">GO PAFE</a>
+				<a href="./members/OS">GO PAFE</a>
 			</div>
-			<div class="member grid-item grade1">
+			<div class="member grid-item grade3 director" style="display: none;">
+				<img src="img/cka-icon.jpg">
+				<p class="name">しーか</p>
+				<p class="word">Adult game / Sound Game</p>
+				<a href="./members/cka">GO PAGE</a>
+			</div>
+			<div class="member grid-item grade3 director" style="display: none;">
+				<img src="img/nono.png">
+				<p class="name">みっきぃ</p>
+				<p class="word">JavaScript / Midi</p>
+				<a href="./members/MICKey/frame.html">GO PAGE</a>
+			</div>
+			<div class="member grid-item grade3" style="display: none;">
 				<img src="img/kanzakinoko.jpg">
 				<p class="name">かんざきのこ</p>
 				<p class="word">Waiting...</p>
-				<a href="./kanzakinoko">GO PAGE</a>
+				<a href="./members/kanzakinoko">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade1">
+			<div class="member grid-item grade3" style="display: none;">
 				<img src="img/桜.png">
 				<p class="name">桜嵐</p>
 				<p class="word">Waiting...</p>
-				<a href="./SakuraArashi">GO PAGE</a>
+				<a href="./members/SakuraArashi">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade1">
+			<div class="member grid-item grade3" style="display: none;">
 				<img src="img/noimage.png">
 				<p class="name">さぎし</p>
 				<p class="word">Waiting...</p>
-				<a href="./sagishi">GO PAGE</a>
+				<a href="./members/sagishi">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade2">
+			<div class="member grid-item grade4" style="display: none;">
 				<img src="img/スクリーンショット (4).png">
 				<p class="name">ぐでたまUDN</p>
 				<p class="word">GAME Planning</p>
-				<a href="./NEETMAN">GO PAGE</a>
+				<a href="./members/NEETMAN">GO PAGE</a>
 			</div>
-			<div class="member grid-item grade1">
-				<img src="img/Pmark.png">
+			<div class="member grid-item grade2" style="display: none;">
+				<img src="img/FTP.png">
 				<p class="name">えふてい</p>
 				<p class="word">Producer</p>
-				<a href="./Efutei">GO PAGE</a>
+				<a href="https://efutei.github.io/">GO PAGE</a>
 			</div>
 		</div>
 		<div style="height: 50px; width: 100%;"></div>
 	</section>
-	
-	
+
+
 	<div class="parallax"></div>
-	
-	
+
+
 	<section id="section4">
 		<h2>BIO</h2>
 		<div style="width:100%">
@@ -254,16 +271,16 @@
 		</div>
 		<div><font size="6">あ　ほ　く　さ</font></div>
 	</section>
-	<div></div>
+	<div>Copyright © 2016-2017 TakushokuDCRC All Rights Reserved.</div>
 
 	<div id="particles-js"></div>
-	
+
 	<script src="themes/particles.js-master/particles.js"></script>
 	<script type="text/javascript" src="index.js"></script>
-	
+
 	<script type="text/javascript" src="plugin/header_menu/classie.js"></script>
 	<script type="text/javascript" src="plugin/header_menu/script.js"></script>
-	
+
 	<script type="text/javascript" src="plugin/Packery/packery.pkgd.min.js"></script>
 	<script type="text/javascript" src="plugin/Packery/script.js"></script>
 </body>
