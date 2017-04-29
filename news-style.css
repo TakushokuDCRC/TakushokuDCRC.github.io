@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body{
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+}
+
+p{
+	margin: 0;
+}
+
+body,h1,ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.eventBlockAreaLink{
+	margin-bottom: 20px;
+}
+
+.eventBlockAreaLink .eventBlockArea__text{
+	color: #333;
+}
+
+@media screen and (min-width: 836px) {
+	.eventBlockArea{
+		display: flex;
+	}
+
+	.eventBlockArea__img {
+		flex: 0 1 auto;
+		width: 325px;
+		height: 65px;
+		margin-right: 20px;
+		overflow: hidden;
+	}
+
+	.eventBlockArea__img img{
+		width: 325px;
+		height: auto;
+	}
+
+	.eventBlockArea__img img:hover{
+		opacity: 0.8;
+	}
+}
+
+@media screen and (max-width: 836px) {
+	.eventBlockArea__img{
+
+	}
+
+	.eventBlockArea__img img{
+		width: 100%;
+		max-width: ;
+		height: auto;
+	}
+}
+
+.eventBlockArea__textArea{
+	margin-top: 20px;
+}
+
+.eventBlockArea__text{
+	position: relative;
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+.eventBlockArea__text:after{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 25px;
+	height: 1px;
+	background: #333;
+	content: "";
+}
+
+.eventBlockArea__date{
+	margin-top: 15px;
+	color: #999;
+	font-size: 10px;
+}

@@ -1,0 +1,180 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fff;
+	background-image: url(img/DCRC.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom;
+}
+
+a {
+	text-decoration: none;
+}
+
+div#main {
+	width: 98vw;
+	text-align: center;
+}
+
+div.parts {
+	display: inline-block;
+	margin: 20px;
+	padding: 20px;
+	background: rgba(0,0,0,0.2);
+	width: 80%;
+	border-radius: 10px;
+}
+
+div.midashi {
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 25pt;
+	color: #003;
+	font-weight: 700;
+	border-left: solid 25px #006;
+	border-bottom: solid 2px #339;
+}
+
+div#title {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: 30px;
+	color: #003;
+	font-size: 40pt;
+	text-shadow: 3px 3px 3px #000;
+}
+
+div#gaiyo {
+	font-size: 18pt;
+	font-weight: 500;
+	color: #000;
+	line-height: 35px;
+}
+
+div#contents {
+	font-size: 20pt;
+	font-weight: 500;
+	color: #000;
+	line-height: 30px;
+}
+
+div#news {
+	
+}
+
+div#link {
+	font-size: 20pt;
+	font-weight: 500;
+}
+
+div#link > a {
+	color: #003;
+	transition: 1s;
+}
+
+div#link > a:hover {
+	color: #339;
+}
+
+iframe {
+	opacity: 1;
+}
+
+/*menu周りの定義*/
+
+div#menu_button {
+	position: fixed;
+	display: table;
+	top: 20px;
+	right: 10%;
+	background-color: #006;
+	border-radius: 50%;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+}
+
+div#back_button {
+	position: fixed;
+	display: table;
+	bottom: 20px;
+	right: 10%;
+	background-color: #006;
+	border-radius: 50%;
+	line-height: 12px;
+	font-weight: 900;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+}
+
+p#menu_text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 15pt;
+	font-weight: 700;
+}
+
+div#menu {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 0;
+	transition: 1s;
+	background: rgba(0,0,30,0.7);
+	text-align: center;
+}
+
+div#menu_close {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	display: table;
+	top: 0px;
+	right: 0px;
+}
+
+div#menu_close_text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 700;
+}
+
+div#menu_close:hover {
+	background: rgba(255,255,255,0.3);
+}
+
+div#menu_content {
+	padding-top: 7%;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 700;
+	line-height: 50px;
+	text-shadow: 3px 3px 3px #600;
+}
+
+div#menu_content > a {
+	color: #fff;
+	transition: 1s;
+}
+
+div#menu_content > a:hover {
+	color: #f99;
+}

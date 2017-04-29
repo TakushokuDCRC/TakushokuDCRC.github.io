@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <meta charset="utf-8">
+      <meta name="Description" content=""/>
+      <meta name="Keywords" content=""/>
+      <meta name="viewport" content=""/>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>DCRC koryo2016</title>
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+   </head>
+   <body>
+   		<div id="main">
+   			<div id="title">
+          <div id="header">
+          <img src="img/dcrc.jpg" alt="">
+          <h1>
+   		       DCRC-DigitalContentsReserchClub-<br>
+             In Koryo Festival 2016
+          </h1>
+          </div>
+          <div class="tabbox">
+            <p class="tabs">
+              <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false">Movie</a>
+              <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">Game</a>
+              <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">Music</a>
+              <a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;">Web</a>
+              <a href="#tab5" class="tab5" onclick="ChangeTab('tab5'); return false;">Device</a>
+            </p>
+            <div id="tab1" class="tab">
+              <!--
+              <div id="imgcolumn">
+                <img src="img/dcrc.jpg" alt="">
+              </div>
+              <div id="maincolumn">
+                hoge
+              </div>
+              !-->
+              <div id="youtube"></div>
+            </div>
+            <div id="tab2" class="tab">
+              <p>いろいろなゲームを各自展示します！</p>
+	      <p> - α班 - </p>
+	      <p><img src="img/game_a.jpg" style="width:70%"></p>
+	      <p> - β班 - </p>
+	      <p><img src="img/game_b.jpg" style="width:70%"></p>
+            </div>
+            <div id="tab3" class="tab">
+              <p>DTM体験できます。よろしければ是非どうぞ！</p>
+	      <p><img src="img/dtm.jpg" style="width:50%"></p>
+            </div>
+            <div id="tab4" class="tab">
+              <p>Web上で作成したゲームなどを展示予定です。</p>
+	　　　<p>当サイト下部linkの公式サイトや以前の特設サイトもあるので見て下さい！</p>
+	　　　<p><img src="img/source.jpg" style="width:70%"></p>
+            </div>
+            <div id="tab5" class="tab">
+              <p>LANケーブル自作体験コーナーを設置します！</p>
+              <p>ブレスレッド、犬の散歩用のリード、インターネット等、様々な用途に使用できます。</p>
+              <p><img src="img/LAN.jpg" style="width:70%"></p>
+            </div>
+          </div>
+          <script type="text/javascript">
+          ChangeTab('tab1');
+          </script>
+   	 </div>
+   			<div id="hoge">
+          <ul>
+            <li>Link</li>
+            <li><a href="https://twitter.com/Takushoku_DCRC" target="_blank" style="text-decoration: none;">Twitter</a></li>
+            <li><a href="http://takushokudcrc.github.io/" target="_blank" style="text-decoration: none;">DCRC公式web</a></li>
+            <li><a href="http://takushokudcrc.github.io/koryo2015/" target="_blank" style="text-decoration: none;">2015年紅陵祭</a></li>
+          </ul>
+        </div>
+   		</div>
+   </body>
+   <script type="text/javascript">
+    
+    window.onresize = function(){
+      changeScale(document.body , 1500);
+    };
+    changeScale(document.body , 1500);
+
+     function changeScale(element,max){
+      ratio = Math.min(window.innerWidth,max) / max;
+      
+      var style = 
+        +"transform-origin:top left;"
+        +"-moz-transform-origin:top left;"
+        +"-webkit-transform-origin:top left;"
+        +"-o-transform-origin:top left;"
+        +"-ms-transform-origin:top left;"
+        +"transform:scale("+ratio+");"
+        +"-o-transform:scale("+ratio+");"
+        +"-webkit-transform:scale("+ratio+");"
+        +"-moz-transform:scale("+ratio+");"
+        +"-ms-transform:scale("+ratio+");"
+      
+      if(window.innerWidth>max)
+        style += "margin-left:"+((window.innerWidth-max)/2)+"px;"
+
+      element.style = style;
+     }
+   </script>
+</html>
