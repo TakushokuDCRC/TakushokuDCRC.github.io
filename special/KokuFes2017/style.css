@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.canvas_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_center {
+    text-align: center;
+}
