@@ -2,11 +2,10 @@
 
     "use strict";
 
-    const { getel, html, mount } = DOMUtl();
+    const scriptSrc = "https://script.google.com/macros/s/AKfycbyJfLQYJrm1VwNEodsDb0T6X4BzJAQnRvf2dUe9YFWoWl2_BKz0/exec";
+    const newsList = document.querySelector("ul");
 
-    const newsList = getel("ul");
-
-    const createNewsListItem = obj => html(`
+    const createNewsListItem = obj => `
         <li>
             <a class="eventBlockAreaLink" href="${obj.link}" target="_top">
                 <div class="eventBlockArea">
@@ -18,42 +17,17 @@
                 </div>
             </a>
         </li>
-    `);
+    `;
 
     window.callback = json => {
         delete window.callback;
-        
+        document.querySelector(".loading-animation-panel").className += " hide-panel";
+        const content = json.map(item => createNewsListItem(item)).join("");
+        newsList.innerHTML = content;
+        window.scrollTo(0, 0);
     }
-
-    //test source
-    /*
-    const data = [
-        {
-            link: "http://www.comiket.co.jp/",
-            img: "news-img/news4.jpg",
-            text: "コミックマーケット93に参加します",
-            date: "2017/11/7"
-        },
-        {
-            link: "http://www.comiket.co.jp/",
-            img: "news-img/news2.jpg",
-            text: "コミックマーケットに参加申し込み中！",
-            date: "2017/1/10"
-        },
-        {
-            link: "https://twitter.com/TakushokuDCRC/status/816654051194482688",
-            img: "news-img/news3.jpg",
-            text: "TwitterのIDを変更しました",
-            date: "2017/1/4"
-        },
-        {
-            link: "http://keydororo.hatenablog.com/entry/2016/12/23/234955",
-            img: "news-img/news1.jpg",
-            text: "忘年会をしました",
-            date: "2016/12/23"
-        }
-    ];
-    data.map(createNewsListItem).forEach(item => mount(newsList, item));
-    */
+    const script = document.createElement("script");
+    script.src = scriptSrc + "?callback=callback";
+    document.querySelector("head").appendChild(script);
 
 })();
