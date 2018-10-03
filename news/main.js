@@ -12,12 +12,14 @@
                     <div class="eventBlockArea__img"><img src="${obj.img}" alt="event"></div>
                     <div class="eventBlockArea__textArea">
                         <p class="eventBlockArea__text">${obj.text}</p>
-                        <p class="eventBlockArea__date">${obj.date}</p>
+                        <p class="eventBlockArea__date">${formatDate(obj.date)}</p>
                     </div>
                 </div>
             </a>
         </li>
     `;
+
+    const formatDate = s => `${s.substr(0, 4)}/${s.substr(4, 2)}/${s.substr(6, 2)}`;
 
     window.callback = json => {
         delete window.callback;
