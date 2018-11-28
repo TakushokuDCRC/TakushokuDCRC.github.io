@@ -11,7 +11,8 @@ function changeMember(className){
   }
   if(className == "check-all"){
     for(var i = 0 ; i < elements.length; i++){
-      elements[i].style.display = "block";
+      // elements[i].style.display = "block";
+      if (!elements[i].className.includes("grade5")) elements[i].style.display = "block";
     }
   }else{
     elements = document.getElementsByClassName(className.replace("check-",""));
