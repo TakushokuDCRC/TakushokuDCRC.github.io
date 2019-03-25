@@ -17,7 +17,7 @@
                         <div class="eventBlockArea__img"><img src="${obj.img}" alt="event"></div>
                         <div class="eventBlockArea__textArea">
                             <p class="eventBlockArea__text">${obj.text}</p>
-                            <p class="eventBlockArea__date">${formatDate(obj.date)}</p>
+                            <p class="eventBlockArea__date">${formatDate(obj.date.toString())}</p>
                         </div>
                     </div>
                 </a>
