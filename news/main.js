@@ -1,4 +1,4 @@
-(_ => {
+(async _ => {
 
     "use strict";
 
@@ -27,15 +27,11 @@
 
     const formatDate = s => `${s.substr(0, 4)}/${s.substr(4, 2)}/${s.substr(6, 2)}`;
 
-    window.callback = json => {
-        delete window.callback;
-        document.querySelector(".loading-animation-panel").className += " hide-panel";
-        const content = json.map(item => createNewsListItem(item)).join("");
-        newsList.innerHTML = content;
-        window.scrollTo(0, 0);
-    }
-    const script = document.createElement("script");
-    script.src = scriptSrc + "?callback=callback";
-    document.querySelector("head").appendChild(script);
+    const res = await fetch(scriptSrc);
+    const json = await res.json();
+    document.querySelector(".loading-animation-panel").className += " hide-panel";
+    const content = json.map(item => createNewsListItem(item)).join("");
+    newsList.innerHTML = content;
+    window.scrollTo(0, 0);
 
 })();
